@@ -3,11 +3,12 @@
 .gitignore
 .github
 
-# Documentation (keep package.json)
-README.md
-*.md
-!README.md
+# Documentation
 docs/
+CHANGELOG.md
+CONTRIBUTING.md
+CONTRIBUTORS.md
+CODE_OF_CONDUCT.md
 
 # CI/CD
 .npmrc
