@@ -1,31 +1,82 @@
-code: code
-name: "CODE: Display in installer"
-header: "Header"
-subheader: "Subheader"
-description: "Longer description of why someone would use or install this, along with if it needs other modules to also be installed"
+code: infra
+name: "Infrastructure & DevOps"
+header: "Infrastructure & DevOps: cloud architecture, platform engineering, and operational excellence"
+subheader: "Infrastructure design, Kubernetes platforms, GitOps workflows, IaC development, and DevOps automation for BMad Method"
+description: "DevOps and Platform Engineering agent with workflows for infrastructure architecture review and validation, comprehensive 16-section checklists, and templates for cloud-native platform implementation"
 default_selected: false
 
-# module custom questions and variable configuration
-
-# Optional to add in this section
-# -- Example, this will ask the prompt to the user during install and save the result in the module.config file that gets created upon install ---
-
-# project_name:
-#   prompt: "What is your game dev experience level?"
-#   default: "intermediate"
-#   result: "{value}"
-#   single-select:
-#     - value: "beginner"
-#       label: "Beginner - New to game development, explain concepts clearly"
-#     - value: "intermediate"
-#       label: "Intermediate - Familiar with game dev concepts, balance explanation with efficiency"
-#     - value: "expert"
-#       label: "Expert - Experienced game developer, be direct and technical"
-
-# -- End Example --
-
-# Variables from Core Config inserted:
+# Variables from Core Config inserted automatically by installer:
 ## user_name
 ## communication_language
 ## document_output_language
 ## output_folder
+## project_root
+
+# Infrastructure-specific configuration variables
+
+infra_artifacts:
+  prompt: "Where should infrastructure artifacts be stored? (architecture docs, validation reports, platform specs)"
+  default: "{output_folder}/infra-artifacts"
+  result: "{project-root}/{value}"
+
+infra_cloud_provider:
+  prompt: "What is your primary cloud provider?"
+  default: "aws"
+  result: "{value}"
+  single-select:
+    - value: "aws"
+      label: "AWS (Recommended)"
+    - value: "azure"
+      label: "Azure"
+    - value: "gcp"
+      label: "Google Cloud Platform"
+    - value: "bare-metal"
+      label: "Bare Metal / On-Premises"
+    - value: "hybrid"
+      label: "Hybrid / Multi-Cloud"
+
+infra_container_platform:
+  prompt: "What container orchestration platform do you use?"
+  default: "kubernetes"
+  result: "{value}"
+  single-select:
+    - value: "kubernetes"
+      label: "Kubernetes (Recommended)"
+    - value: "docker-compose"
+      label: "Docker Compose"
+    - value: "nomad"
+      label: "HashiCorp Nomad"
+    - value: "none"
+      label: "No containers"
+
+infra_iac_tool:
+  prompt: "What Infrastructure as Code tool do you use?"
+  default: "terraform"
+  result: "{value}"
+  single-select:
+    - value: "terraform"
+      label: "Terraform / OpenTofu (Recommended)"
+    - value: "pulumi"
+      label: "Pulumi"
+    - value: "ansible"
+      label: "Ansible"
+    - value: "cloudformation"
+      label: "CloudFormation / Bicep / ARM"
+    - value: "other"
+      label: "Other / Custom"
+
+infra_gitops_tool:
+  prompt: "What GitOps tool do you use (if any)?"
+  default: "argocd"
+  result: "{value}"
+  single-select:
+    - value: "argocd"
+      label: "ArgoCD (Recommended)"
+    - value: "flux"
+      label: "Flux"
+    - value: "none"
+      label: "No GitOps tooling yet"
+
+# Directories to create during installation
+directories:
+  - "{infra_artifacts}"

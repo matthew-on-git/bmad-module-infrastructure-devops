@@ -1,17 +1,26 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
-  "name": "TODO:-module-name-here",
+  "name": "bmad-module-infrastructure-devops",
   "version": "0.1.0",
-  "description": "TODO: Describe your module here",
+  "description": "Infrastructure & DevOps module for BMad Method - cloud infrastructure design, Kubernetes/container platforms, GitOps workflows, IaC development, and platform engineering",
   "keywords": [
-    "bmad"
+    "bmad",
+    "infrastructure",
+    "devops",
+    "kubernetes",
+    "platform-engineering",
+    "gitops",
+    "iac",
+    "cloud",
+    "service-mesh",
+    "ci-cd"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git"
+    "url": "git+https://github.com/matthew-on-git/bmad-module-infrastructure-devops.git"
   },
   "license": "MIT",
-  "author": "Your Name",
+  "author": "Matthew Mellor",
   "main": "",
   "bin": {},
   "scripts": {
