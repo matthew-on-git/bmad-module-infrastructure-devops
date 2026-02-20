@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.3.1...v0.3.2) (2026-02-20)
+
+
+### Bug Fixes
+
+* **ci:** switch to npm trusted publishing via OIDC ([633c9a2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/633c9a24f203516b033d250eb351a0d51be4411d))
+* **ci:** switch to npm trusted publishing via OIDC ([311fe21](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/311fe21d00e76752f223493407628c8bfda1425a))
+
 ## [0.3.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.3.0...v0.3.1) (2026-02-20)
 
 
