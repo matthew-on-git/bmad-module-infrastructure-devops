@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/bmad-module-infrastructure-devops-v0.2.0...bmad-module-infrastructure-devops-v0.2.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* **ci:** use googleapis/release-please-action ([c2dad3b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/c2dad3bb7df6a99967be5071ef1d37bc35eec521))
+
 ## [0.2.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/bmad-module-infrastructure-devops-v0.1.0...bmad-module-infrastructure-devops-v0.2.0) (2026-02-20)
 
 
