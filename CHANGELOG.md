@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.4.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.4.0...v0.4.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* **ci:** restore NODE_AUTH_TOKEN for NPM publish ([9144b1e](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/9144b1eb47fdb0ad5c7f1b0484cba50484ffaf8a))
+* **ci:** restore NODE_AUTH_TOKEN for NPM publish ([553a472](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/553a472c31536184bad4dd29cf81463a1108c06a))
+
 ## [0.4.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.3.2...v0.4.0) (2026-02-20)
 
 
