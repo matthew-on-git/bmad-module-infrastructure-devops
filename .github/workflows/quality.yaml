@@ -89,4 +89,3 @@ jobs:
 
       - name: Run agent schema validation tests
         run: npm run test:schemas
-
