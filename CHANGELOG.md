@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.3.0...v0.3.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* **ci:** chain NPM publish into release-please workflow ([0d47289](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/0d4728935aa263daf516693e274413da62ff61f7))
+* **ci:** chain NPM publish into release-please workflow ([77f509d](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/77f509dc6a2497948b84f22685a53f4dc8674b08))
+
 ## [0.3.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.2.1...v0.3.0) (2026-02-20)
 
 
