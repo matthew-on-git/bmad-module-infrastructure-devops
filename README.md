@@ -1,6 +1,21 @@
 # BMad Infrastructure & DevOps Module
 
-An installable BMad Method module that adds comprehensive infrastructure and DevOps capabilities through Alex, a DevOps Infrastructure Specialist & Platform Engineer agent.
+A custom [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) module that adds infrastructure and DevOps capabilities through **Alex**, a DevOps Infrastructure Specialist & Platform Engineer agent.
+
+## Quickstart
+
+```bash
+# 1. Install this module into your project
+npm install bmad-module-infrastructure-devops
+
+# 2. Run the BMad installer
+npx bmad-method install
+
+# 3. When prompted for custom modules, point the installer at:
+#    node_modules/bmad-module-infrastructure-devops/src
+```
+
+The installer will copy the module's agents, workflows, templates, and data into your project's `_bmad/infra/` directory and prompt you to configure your infrastructure preferences.
 
 ## What's Included
 
@@ -52,28 +67,49 @@ A 16-section infrastructure validation checklist covering:
 
 ## Installation
 
-### Via BMad Installer (Recommended)
+This is a **custom module** — it is not bundled with the BMad installer. You install the npm package first, then the BMad installer wires it into your project.
 
-```bash
-npx bmad-method install
-```
+### Prerequisites
 
-Select "Infrastructure & DevOps" during module selection.
+- Node.js >= 22.0.0
+- An existing project (or a new directory) where you want to set up BMad
 
-### Via npm
+### Step-by-Step
 
-```bash
-npm install bmad-module-infrastructure-devops
-```
+1. **Install the module** into your project's `node_modules`:
+
+   ```bash
+   npm install bmad-module-infrastructure-devops
+   ```
+
+2. **Run the BMad installer**:
+
+   ```bash
+   npx bmad-method install
+   ```
+
+3. **Select this module** when the installer reaches the custom module step. Point it at:
+
+   ```text
+   node_modules/bmad-module-infrastructure-devops/src
+   ```
+
+4. **Answer the configuration prompts** (see [Configuration](#configuration) below).
+
+The installer copies the module contents into `_bmad/infra/` and registers it in your project's `_bmad/_config/manifest.yaml`.
 
 ## Configuration
 
-During installation, you'll be asked to configure:
+The installer's Configuration Gateway offers **Express Setup** (accept all defaults) or **Customize** (choose per-module). If you customize, you'll be prompted for:
 
-- **Cloud provider** - AWS, Azure, GCP, bare metal, or hybrid
-- **Container platform** - Kubernetes, Docker Compose, Nomad, or none
-- **IaC tool** - Terraform/OpenTofu, Pulumi, Ansible, CloudFormation, or other
-- **GitOps tool** - ArgoCD, Flux, or none
+| Setting | Options | Default |
+|---------|---------|---------|
+| Cloud provider | AWS, Azure, GCP, Bare Metal, Hybrid | AWS |
+| Container platform | Kubernetes, Docker Compose, Nomad, None | Kubernetes |
+| IaC tool | Terraform/OpenTofu, Pulumi, Ansible, CloudFormation, Other | Terraform |
+| GitOps tool | ArgoCD, Flux, None | ArgoCD |
+
+With Express Setup, all defaults are applied automatically. Either way, selections are stored in `_bmad/_config/module-configs.yaml` and used by Alex to tailor recommendations to your stack.
 
 ## Integration Points
 
@@ -89,22 +125,54 @@ Alex collaborates with other BMad agents:
 - **Development agents** - Environment provisioning and platform support
 - **Product Owner** - PRD alignment and non-functional requirements
 
-## Publishing
+## Module Structure
 
-```bash
-npm run release          # Patch release
-npm run release:minor    # Minor release
-npm run release:major    # Major release
+```text
+src/
+  agents/
+    devops.agent.yaml        # Alex agent definition
+  workflows/
+    review-infrastructure/   # Infrastructure review workflow (3 steps)
+    validate-infrastructure/ # Pre-deployment validation workflow (4 steps)
+  templates/
+    infrastructure-architecture-tmpl.md
+    platform-implementation-tmpl.md
+  data/
+    infrastructure-checklist.md
+  module.yaml                # Module manifest and config prompts
+  module-help.csv            # Help entries for the BMad help system
 ```
 
 ## Development
 
 ```bash
 npm install              # Install dependencies
-npm run lint             # Run linting
-npm run format:fix       # Fix formatting
-npm test                 # Run tests
+npm test                 # Run all checks (schemas, lint, format)
+npm run lint             # Run linting only
+npm run lint:fix         # Auto-fix lint issues
+npm run format:fix       # Auto-fix formatting
 ```
+
+### Schema Validation
+
+Agent YAML files are validated against the BMad agent schema:
+
+```bash
+npm run test:schemas     # Run agent schema tests
+npm run validate:schemas # Validate agent schema compliance
+```
+
+## Publishing
+
+```bash
+npm run release          # Patch release (0.1.0 -> 0.1.1)
+npm run release:minor    # Minor release (0.1.0 -> 0.2.0)
+npm run release:major    # Major release (0.1.0 -> 1.0.0)
+```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting issues and pull requests.
 
 ## License
 
