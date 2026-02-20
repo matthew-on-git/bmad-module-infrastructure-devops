@@ -1,5 +1,51 @@
 # Changelog
 
+## [0.4.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.3.2...v0.4.0) (2026-02-20)
+
+
+### Features
+
+* Add Infrastructure & DevOps module with Alex agent ([0794c3d](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/0794c3d67a24a47c5cea913aa941aef12dbe5c51))
+* test CICD ([94427e0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/94427e0bf779efb32865f2817c41872443372ade))
+* test CICD ([ab97aa1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/ab97aa1c4dac9d069139d5a78639286e6b5b128a))
+* update README and add CICD ([c58aa3f](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/c58aa3f2d2a6848bea4afeb6c7a0e26a3c88c159))
+
+
+### Bug Fixes
+
+* **ci:** chain NPM publish into release-please workflow ([0d47289](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/0d4728935aa263daf516693e274413da62ff61f7))
+* **ci:** chain NPM publish into release-please workflow ([77f509d](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/77f509dc6a2497948b84f22685a53f4dc8674b08))
+* **ci:** commit package-lock.json for CI workflows ([732738b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/732738b3a7c6eb62c96747e26918f51e65b272b9))
+* **ci:** skip devDep audit and remove missing test:install script ([9e05c29](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/9e05c29d5eff334e0ba2121c80abb847e7dbb16a))
+* **ci:** switch to npm trusted publishing via OIDC ([633c9a2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/633c9a24f203516b033d250eb351a0d51be4411d))
+* **ci:** switch to npm trusted publishing via OIDC ([311fe21](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/311fe21d00e76752f223493407628c8bfda1425a))
+* **ci:** use googleapis/release-please-action ([c2dad3b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/c2dad3bb7df6a99967be5071ef1d37bc35eec521))
+* **ci:** use googleapis/release-please-action ([27e4161](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/27e41611126fd6146b819eaae664adef996effa0))
+* **ci:** use plain v* tags for releases ([a6ab6b0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/a6ab6b0c8538eaf051a1a4dd5d81fc8e4369ad20))
+* **ci:** use plain v* tags for releases ([437beeb](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/437beeb48451092638939e75831ac880baf10fc8))
+* Include src/ markdown files in npm package ([c9e5eda](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/c9e5edabe9a2702b5748b789fa6381b9d16d1343))
+
+
+### Styles
+
+* **ci:** fix trailing newline in quality.yaml ([911e358](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/911e358a960409974a4e278b522a09e93e4dd332))
+
+
+### Miscellaneous
+
+* **main:** release 0.3.0 ([e0b40f9](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/e0b40f9d4b1d4eb53bd866567b9e8ff8706d2326))
+* **main:** release 0.3.0 ([97e96a5](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/97e96a52331502496a81f8d95a2d07bf5ef79830))
+* **main:** release 0.3.1 ([37e3e35](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/37e3e35cf82fb852dafbe65f88fc88fedc5ad953))
+* **main:** release 0.3.1 ([a28cc7e](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/a28cc7e50e4da462f16bb5c9c6383d066ede7c69))
+* **main:** release 0.3.2 ([8217f3b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/8217f3b9b6b94000e5ddac82dab5a5eeceab2786))
+* **main:** release 0.3.2 ([e446b38](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/e446b38e1d288b8c5ccefd338f91d7bb89414693))
+* **main:** release bmad-module-infrastructure-devops 0.2.0 ([a7ce24b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/a7ce24b7ca07487c185155120c93572f6128541a))
+* **main:** release bmad-module-infrastructure-devops 0.2.0 ([41e53e9](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/41e53e98991f9623ec5fc19c1281f7e5dc6c1c64))
+* **main:** release bmad-module-infrastructure-devops 0.2.1 ([e0c8e0c](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/e0c8e0c60d3f8113152253a8d81d4915bdf62d27))
+* **main:** release bmad-module-infrastructure-devops 0.2.1 ([5bf8e97](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/5bf8e97dcce70dbef9c9e2822f626fd060709258))
+* trigger release for v0.3.2 ([add4089](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/add4089e336b0b7fa1e1313acc971b5c334ac8aa))
+* trigger release for v0.3.2 ([78cdc15](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/78cdc15afca53a0e79b23bc0931618203c1b204b))
+
 ## [0.3.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.3.1...v0.3.2) (2026-02-20)
 
 
