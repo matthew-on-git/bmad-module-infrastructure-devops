@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.4.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.4.1...v0.4.2) (2026-03-04)
+
+
+### Miscellaneous
+
+* **deps:** bump minimatch ([d310798](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/d31079804d6cc395640fafa6c9325aa6e74a60e2))
+* **deps:** bump minimatch ([37c2a25](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/37c2a2549344fb03f7272cd59ef54652b43dc822))
+* **deps:** bump rollup from 4.57.1 to 4.59.0 ([f95e8e3](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/f95e8e36566795e7557ae6842756a8b803a89dea))
+* **deps:** bump rollup from 4.57.1 to 4.59.0 ([438c5b3](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/438c5b3704db84cea57af85dc2eb58614d3cd20a))
+
 ## [0.4.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.4.0...v0.4.1) (2026-02-20)
 
 
