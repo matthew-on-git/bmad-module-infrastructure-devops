@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "docs/**"
-      - "src/modules/*/docs/**"
+      - "skills/**"
       - "website/**"
       - "tools/build-docs.js"
       - ".github/workflows/docs.yaml"

@@ -20,6 +20,15 @@ test/
 .prettierrc.*
 .husky/
 
+# BMad local install
+_bmad/
+.claude/
+
+# Config files
+eslint.config.mjs
+prettier.config.mjs
+.markdownlint-cli2.yaml
+
 # IDE
 .vscode/
 .idea/
