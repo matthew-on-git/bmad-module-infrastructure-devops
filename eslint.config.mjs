@@ -25,6 +25,8 @@ export default [
       // Gitignored patterns
       'z*/**', // z-samples, z1, z2, etc.
       '.claude/**',
+      '.cursor/**',
+      '.opencode/**',
       '.codex/**',
       '.github/chatmodes/**',
       '.agent/**',

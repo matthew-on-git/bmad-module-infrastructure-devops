@@ -1,0 +1,22 @@
+{
+  "name": "infra",
+  "owner": {
+    "name": "Matthew Mellor"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/matthew-on-git/bmad-module-infrastructure-devops",
+  "repository": "https://github.com/matthew-on-git/bmad-module-infrastructure-devops",
+  "keywords": ["bmad", "infrastructure", "devops", "kubernetes", "platform-engineering", "gitops", "iac", "cloud", "service-mesh", "ci-cd"],
+  "plugins": [
+    {
+      "name": "infra",
+      "source": "./",
+      "description": "DevOps and Platform Engineering agent with workflows for infrastructure architecture review and validation, comprehensive 16-section checklists, and templates for cloud-native platform implementation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Matthew Mellor"
+      },
+      "skills": ["./bmad-agent-devops"]
+    }
+  ]
+}

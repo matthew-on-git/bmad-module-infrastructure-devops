@@ -52,13 +52,11 @@ A 16-section infrastructure validation checklist covering:
 
 ## Installation
 
-### Via BMad Installer (Recommended)
+### As a BMad Community Module
 
-```bash
-npx bmad-method install
-```
+Copy the `skills/bmad-agent-devops/` folder into your project's `.claude/skills/` directory. On first activation, Alex will detect the module isn't registered and walk you through setup. You can also trigger setup manually:
 
-Select "Infrastructure & DevOps" during module selection.
+> Talk to Alex with `setup`
 
 ### Via npm
 
@@ -66,9 +64,11 @@ Select "Infrastructure & DevOps" during module selection.
 npm install bmad-module-infrastructure-devops
 ```
 
+Then copy `node_modules/bmad-module-infrastructure-devops/skills/bmad-agent-devops/` to `.claude/skills/`.
+
 ## Configuration
 
-During installation, you'll be asked to configure:
+During setup, you'll be asked to configure:
 
 - **Cloud provider** - AWS, Azure, GCP, bare metal, or hybrid
 - **Container platform** - Kubernetes, Docker Compose, Nomad, or none
