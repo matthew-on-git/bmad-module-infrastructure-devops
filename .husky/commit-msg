@@ -1,0 +1,39 @@
+#!/usr/bin/env sh
+
+# Validate commit message follows Conventional Commits format
+# https://www.conventionalcommits.org/
+
+commit_msg_file="$1"
+commit_msg=$(head -n 1 "$commit_msg_file")
+
+# Allow merge commits
+if echo "$commit_msg" | grep -qE "^Merge "; then
+  exit 0
+fi
+
+# Allow fixup, squash, amend, and revert prefixes (git rebase operations)
+if echo "$commit_msg" | grep -qE "^(fixup|squash|amend|revert)! "; then
+  exit 0
+fi
+
+# Validate conventional commit format
+if ! echo "$commit_msg" | grep -qE "^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test)(\([a-z 0-9\-]+\))?!?: .+$"; then
+  echo ""
+  echo "ERROR: Invalid commit message format:"
+  echo "  \"$commit_msg\""
+  echo ""
+  echo "Commit messages must follow Conventional Commits:"
+  echo "  <type>(<optional scope>): <description>"
+  echo ""
+  echo "Valid types:"
+  echo "  feat, fix, docs, style, refactor, perf,"
+  echo "  test, build, ci, chore, revert"
+  echo ""
+  echo "Examples:"
+  echo "  feat: add Kubernetes deployment support"
+  echo "  fix(helm): correct service port mapping"
+  echo "  docs: update installation guide"
+  echo "  feat!: redesign CLI interface"
+  echo ""
+  exit 1
+fi

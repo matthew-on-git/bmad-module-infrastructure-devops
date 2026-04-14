@@ -1,6 +1,12 @@
 # BMad Infrastructure & DevOps Module
 
-An installable BMad Method module that adds comprehensive infrastructure and DevOps capabilities through Alex, a DevOps Infrastructure Specialist & Platform Engineer agent.
+A custom [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) community module that adds infrastructure and DevOps capabilities through **Alex**, a DevOps Infrastructure Specialist & Platform Engineer agent.
+
+## Quickstart
+
+Copy the `skills/bmad-agent-devops/` folder into your project's `.claude/skills/` directory. On first activation, Alex will detect the module isn't registered and walk you through setup. You can also trigger setup manually:
+
+> Talk to Alex with `setup`
 
 ## What's Included
 
@@ -12,12 +18,12 @@ A 15+ year DevSecOps and Platform Engineering specialist who guides you through 
 
 | Code | Command | Description |
 |------|---------|-------------|
+| CH | Chat | Chat with Alex about infrastructure, DevOps, or platform engineering |
 | RI | Review Infrastructure | Systematic review of existing infrastructure against best practices |
 | VI | Validate Infrastructure | Comprehensive validation of changes before deployment |
 | IA | Infrastructure Architecture | Create infrastructure architecture document from template |
 | PI | Platform Implementation | Create platform implementation plan from approved architecture |
 | CK | Checklist | Run the full 16-section infrastructure validation checklist |
-| CH | Chat | Chat with Alex about infrastructure, DevOps, or platform engineering |
 
 ### Workflows
 
@@ -54,26 +60,36 @@ A 16-section infrastructure validation checklist covering:
 
 ### As a BMad Community Module
 
-Copy the `skills/bmad-agent-devops/` folder into your project's `.claude/skills/` directory. On first activation, Alex will detect the module isn't registered and walk you through setup. You can also trigger setup manually:
-
-> Talk to Alex with `setup`
+Copy the `skills/bmad-agent-devops/` folder into your project's `.claude/skills/` directory. On first activation, Alex will detect the module isn't registered and walk you through setup.
 
 ### Via npm
 
-```bash
-npm install bmad-module-infrastructure-devops
-```
+1. **Install the module** into your project's `node_modules`:
 
-Then copy `node_modules/bmad-module-infrastructure-devops/skills/bmad-agent-devops/` to `.claude/skills/`.
+   ```bash
+   npm install bmad-module-infrastructure-devops
+   ```
+
+2. **Copy the skill** into your project:
+
+   ```bash
+   cp -r node_modules/bmad-module-infrastructure-devops/skills/bmad-agent-devops .claude/skills/
+   ```
+
+3. **Activate Alex** — setup will trigger automatically on first run.
 
 ## Configuration
 
 During setup, you'll be asked to configure:
 
-- **Cloud provider** - AWS, Azure, GCP, bare metal, or hybrid
-- **Container platform** - Kubernetes, Docker Compose, Nomad, or none
-- **IaC tool** - Terraform/OpenTofu, Pulumi, Ansible, CloudFormation, or other
-- **GitOps tool** - ArgoCD, Flux, or none
+| Setting | Options | Default |
+|---------|---------|---------|
+| Cloud provider | AWS, Azure, GCP, Bare Metal, Hybrid | AWS |
+| Container platform | Kubernetes, Docker Compose, Nomad, None | Kubernetes |
+| IaC tool | Terraform/OpenTofu, Pulumi, Ansible, CloudFormation, Other | Terraform |
+| GitOps tool | ArgoCD, Flux, None | ArgoCD |
+
+Selections are stored in `_bmad/config.yaml` (under the `infra` section) and used by Alex to tailor recommendations to your stack.
 
 ## Integration Points
 
@@ -89,22 +105,53 @@ Alex collaborates with other BMad agents:
 - **Development agents** - Environment provisioning and platform support
 - **Product Owner** - PRD alignment and non-functional requirements
 
-## Publishing
+## Module Structure
 
-```bash
-npm run release          # Patch release
-npm run release:minor    # Minor release
-npm run release:major    # Major release
+```text
+skills/
+  bmad-agent-devops/
+    SKILL.md                         # Alex agent skill definition
+    assets/
+      module.yaml                    # Module manifest and config prompts
+      module-help.csv                # Help entries for the BMad help system
+      module-setup.md                # Self-registration flow
+    scripts/
+      merge-config.py                # Config merge script
+      merge-help-csv.py              # Help CSV merge script
+    references/
+      workflows/
+        review-infrastructure/       # Infrastructure review workflow (3 steps)
+        validate-infrastructure/     # Pre-deployment validation workflow (4 steps)
+      templates/
+        infrastructure-architecture-tmpl.md
+        platform-implementation-tmpl.md
+      data/
+        infrastructure-checklist.md
+  .claude-plugin/
+    marketplace.json                 # Community module distribution manifest
 ```
 
 ## Development
 
 ```bash
 npm install              # Install dependencies
-npm run lint             # Run linting
-npm run format:fix       # Fix formatting
-npm test                 # Run tests
+npm test                 # Run all checks (lint, format)
+npm run lint             # Run linting only
+npm run lint:fix         # Auto-fix lint issues
+npm run format:fix       # Auto-fix formatting
 ```
+
+## Publishing
+
+```bash
+npm run release          # Patch release (0.1.0 -> 0.1.1)
+npm run release:minor    # Minor release (0.1.0 -> 0.2.0)
+npm run release:major    # Major release (0.1.0 -> 1.0.0)
+```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting issues and pull requests.
 
 ## License
 
