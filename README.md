@@ -1,21 +1,12 @@
 # BMad Infrastructure & DevOps Module
 
-A custom [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) module that adds infrastructure and DevOps capabilities through **Alex**, a DevOps Infrastructure Specialist & Platform Engineer agent.
+A custom [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) community module that adds infrastructure and DevOps capabilities through **Alex**, a DevOps Infrastructure Specialist & Platform Engineer agent.
 
 ## Quickstart
 
-```bash
-# 1. Install this module into your project
-npm install bmad-module-infrastructure-devops
+Copy the `skills/bmad-agent-devops/` folder into your project's `.claude/skills/` directory. On first activation, Alex will detect the module isn't registered and walk you through setup. You can also trigger setup manually:
 
-# 2. Run the BMad installer
-npx bmad-method install
-
-# 3. When prompted for custom modules, point the installer at:
-#    node_modules/bmad-module-infrastructure-devops/src
-```
-
-The installer will copy the module's agents, workflows, templates, and data into your project's `_bmad/infra/` directory and prompt you to configure your infrastructure preferences.
+> Talk to Alex with `setup`
 
 ## What's Included
 
@@ -27,12 +18,12 @@ A 15+ year DevSecOps and Platform Engineering specialist who guides you through 
 
 | Code | Command | Description |
 |------|---------|-------------|
+| CH | Chat | Chat with Alex about infrastructure, DevOps, or platform engineering |
 | RI | Review Infrastructure | Systematic review of existing infrastructure against best practices |
 | VI | Validate Infrastructure | Comprehensive validation of changes before deployment |
 | IA | Infrastructure Architecture | Create infrastructure architecture document from template |
 | PI | Platform Implementation | Create platform implementation plan from approved architecture |
 | CK | Checklist | Run the full 16-section infrastructure validation checklist |
-| CH | Chat | Chat with Alex about infrastructure, DevOps, or platform engineering |
 
 ### Workflows
 
@@ -67,14 +58,11 @@ A 16-section infrastructure validation checklist covering:
 
 ## Installation
 
-This is a **custom module** — it is not bundled with the BMad installer. You install the npm package first, then the BMad installer wires it into your project.
+### As a BMad Community Module
 
-### Prerequisites
+Copy the `skills/bmad-agent-devops/` folder into your project's `.claude/skills/` directory. On first activation, Alex will detect the module isn't registered and walk you through setup.
 
-- Node.js >= 22.0.0
-- An existing project (or a new directory) where you want to set up BMad
-
-### Step-by-Step
+### Via npm
 
 1. **Install the module** into your project's `node_modules`:
 
@@ -82,25 +70,17 @@ This is a **custom module** — it is not bundled with the BMad installer. You i
    npm install bmad-module-infrastructure-devops
    ```
 
-2. **Run the BMad installer**:
+2. **Copy the skill** into your project:
 
    ```bash
-   npx bmad-method install
+   cp -r node_modules/bmad-module-infrastructure-devops/skills/bmad-agent-devops .claude/skills/
    ```
 
-3. **Select this module** when the installer reaches the custom module step. Point it at:
-
-   ```text
-   node_modules/bmad-module-infrastructure-devops/src
-   ```
-
-4. **Answer the configuration prompts** (see [Configuration](#configuration) below).
-
-The installer copies the module contents into `_bmad/infra/` and registers it in your project's `_bmad/_config/manifest.yaml`.
+3. **Activate Alex** — setup will trigger automatically on first run.
 
 ## Configuration
 
-The installer's Configuration Gateway offers **Express Setup** (accept all defaults) or **Customize** (choose per-module). If you customize, you'll be prompted for:
+During setup, you'll be asked to configure:
 
 | Setting | Options | Default |
 |---------|---------|---------|
@@ -109,7 +89,7 @@ The installer's Configuration Gateway offers **Express Setup** (accept all defau
 | IaC tool | Terraform/OpenTofu, Pulumi, Ansible, CloudFormation, Other | Terraform |
 | GitOps tool | ArgoCD, Flux, None | ArgoCD |
 
-With Express Setup, all defaults are applied automatically. Either way, selections are stored in `_bmad/_config/module-configs.yaml` and used by Alex to tailor recommendations to your stack.
+Selections are stored in `_bmad/config.yaml` (under the `infra` section) and used by Alex to tailor recommendations to your stack.
 
 ## Integration Points
 
@@ -128,38 +108,37 @@ Alex collaborates with other BMad agents:
 ## Module Structure
 
 ```text
-src/
-  agents/
-    devops.agent.yaml        # Alex agent definition
-  workflows/
-    review-infrastructure/   # Infrastructure review workflow (3 steps)
-    validate-infrastructure/ # Pre-deployment validation workflow (4 steps)
-  templates/
-    infrastructure-architecture-tmpl.md
-    platform-implementation-tmpl.md
-  data/
-    infrastructure-checklist.md
-  module.yaml                # Module manifest and config prompts
-  module-help.csv            # Help entries for the BMad help system
+skills/
+  bmad-agent-devops/
+    SKILL.md                         # Alex agent skill definition
+    assets/
+      module.yaml                    # Module manifest and config prompts
+      module-help.csv                # Help entries for the BMad help system
+      module-setup.md                # Self-registration flow
+    scripts/
+      merge-config.py                # Config merge script
+      merge-help-csv.py              # Help CSV merge script
+    references/
+      workflows/
+        review-infrastructure/       # Infrastructure review workflow (3 steps)
+        validate-infrastructure/     # Pre-deployment validation workflow (4 steps)
+      templates/
+        infrastructure-architecture-tmpl.md
+        platform-implementation-tmpl.md
+      data/
+        infrastructure-checklist.md
+  .claude-plugin/
+    marketplace.json                 # Community module distribution manifest
 ```
 
 ## Development
 
 ```bash
 npm install              # Install dependencies
-npm test                 # Run all checks (schemas, lint, format)
+npm test                 # Run all checks (lint, format)
 npm run lint             # Run linting only
 npm run lint:fix         # Auto-fix lint issues
 npm run format:fix       # Auto-fix formatting
-```
-
-### Schema Validation
-
-Agent YAML files are validated against the BMad agent schema:
-
-```bash
-npm run test:schemas     # Run agent schema tests
-npm run validate:schemas # Validate agent schema compliance
 ```
 
 ## Publishing
@@ -181,4 +160,3 @@ MIT License - see [LICENSE](LICENSE) for details.
 ---
 
 **BMad Infrastructure & DevOps Module** - Part of the [BMad Method](https://github.com/bmad-code-org/BMAD-METHOD) ecosystem.
-

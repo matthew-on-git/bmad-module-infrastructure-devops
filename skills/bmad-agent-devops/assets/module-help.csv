@@ -1,0 +1,8 @@
+module,skill,display-name,menu-code,description,action,args,phase,after,before,required,output-location,outputs
+infra,bmad-agent-devops,Chat with Alex,CH,Chat about infrastructure DevOps or platform engineering,chat,,anytime,,,false,,
+infra,bmad-agent-devops,Review Infrastructure,RI,Systematic review of existing infrastructure against best practices,review-infrastructure,,anytime,,,false,infra_artifacts,infrastructure review report
+infra,bmad-agent-devops,Validate Infrastructure,VI,Comprehensive validation of infrastructure changes before deployment,validate-infrastructure,,anytime,,,false,infra_artifacts,infrastructure validation report
+infra,bmad-agent-devops,Infrastructure Architecture,IA,Create infrastructure architecture document from template,infra-architecture,,3-solutioning,,,false,infra_artifacts,infrastructure architecture document
+infra,bmad-agent-devops,Platform Implementation,PI,Create platform implementation plan from approved architecture,platform-implementation,,3-solutioning,bmad-agent-devops:infra-architecture,,false,infra_artifacts,platform implementation document
+infra,bmad-agent-devops,Checklist,CK,Run the full 16-section infrastructure validation checklist,checklist,,anytime,,,false,infra_artifacts,infrastructure validation checklist
+infra,bmad-agent-devops,Configure Module,SU,Install or reconfigure the Infrastructure and DevOps module,configure,,anytime,,,false,,
