@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.0...v0.5.1) (2026-06-02)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump astro and @astrojs/starlight ([fc55d44](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/fc55d4475b9c677d3d25930b5cc05223edf92a71))
+* **deps-dev:** bump astro and @astrojs/starlight ([532787e](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/532787edf8876e6d170b7913ac8aa9b2d85977f3))
+* **deps:** bump h3 from 1.15.5 to 1.15.11 ([e517360](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/e517360fcd7bfc4d2fabfa0e969d3e3707300ff9))
+* **deps:** bump postcss from 8.5.6 to 8.5.15 ([2020099](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/2020099e14c634a2c0aa49b79028c225d4096370))
+
 ## [0.5.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.4.2...v0.5.0) (2026-06-02)
 
 
