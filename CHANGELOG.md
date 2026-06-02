@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.5.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.4.2...v0.5.0) (2026-06-02)
+
+
+### Features
+
+* Convert from v6 module to BMad community module format ([182ad72](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/182ad72048ccbc89d97df6284008cf1a334df9f1))
+
+
+### Miscellaneous
+
+* **deps-dev:** bump lodash from 4.17.23 to 4.18.1 ([927dd48](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/927dd48569429ef1e42af44ab3a0e941adfecd50))
+* **deps-dev:** bump lodash from 4.17.23 to 4.18.1 ([04d5ab7](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/04d5ab79f8f70747608c2b21a3627f76691dbdbe))
+* **deps-dev:** bump picomatch from 2.3.1 to 2.3.2 ([5ad3a40](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/5ad3a4045a8300e0674dc16d729f59a1de409162))
+* **deps:** bump defu from 6.1.4 to 6.1.7 ([4348d0b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/4348d0b3ee2684a442b7b6fed7c182919336b616))
+* **deps:** bump defu from 6.1.4 to 6.1.7 ([5b91fa9](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/5b91fa9150e503504a2734b9c52729529d2220e3))
+* **deps:** bump svgo from 4.0.0 to 4.0.1 ([f71955b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/f71955b8c50bad2481f7a319b4ff81adc4434d96))
+* **deps:** bump vite from 6.4.1 to 6.4.2 ([75272b0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/75272b010acecfd49054b761882efcb80407e155))
+* **deps:** bump vite from 6.4.1 to 6.4.2 ([0a39840](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/0a39840c4258c08a591971c58e405763a1d9a47b))
+* Resolve merge conflicts with main ([abc9c29](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/abc9c296a46ad9090e5265ae4285b61bce9efe24))
+
 ## [0.4.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.4.1...v0.4.2) (2026-03-04)
 
 
