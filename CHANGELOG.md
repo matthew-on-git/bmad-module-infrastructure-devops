@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.3](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.2...v0.5.3) (2026-06-29)
+
+
+### Miscellaneous
+
+* **deps:** bump esbuild, @astrojs/starlight and astro ([7f58dea](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/7f58deae4aa4aec9cd3e806d9de08a0215d2b847))
+
 ## [0.5.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.1...v0.5.2) (2026-06-29)
 
 
