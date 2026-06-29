@@ -56,6 +56,9 @@
       "markdownlint-cli2"
     ]
   },
+  "overrides": {
+    "markdown-it": "14.2.0"
+  },
   "devDependencies": {
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/starlight": "^0.39.2",
