@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.4](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.3...v0.5.4) (2026-06-29)
+
+
+### Bug Fixes
+
+* override markdown-it to patched version ([6a8c886](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/6a8c886e31bc4beb6aeadf438f454ac9ad42e0f3))
+
 ## [0.5.3](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.2...v0.5.3) (2026-06-29)
 
 
