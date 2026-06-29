@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.1...v0.5.2) (2026-06-29)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump astro from 6.4.2 to 6.4.8 ([252207b](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/252207b822295ae0ec08ebddb183672c5c4c0998))
+* **deps-dev:** bump astro from 6.4.2 to 6.4.8 ([4830007](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/483000787de19775639e8e84ab563ea10df4b6e6))
+* **deps-dev:** bump js-yaml from 4.1.1 to 4.2.0 ([3b66da0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/3b66da0a6e66e7a024b2bb2bf26922041630cf82))
+* **deps-dev:** bump js-yaml from 4.1.1 to 4.2.0 ([4bd4637](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/4bd463790d6268c64e5d17998a814ecabfbd3e85))
+
 ## [0.5.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.0...v0.5.1) (2026-06-02)
 
 
