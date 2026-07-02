@@ -10,13 +10,13 @@
   "plugins": [
     {
       "name": "infra",
-      "source": "./",
+      "source": "./skills",
       "description": "DevOps and Platform Engineering agent with workflows for infrastructure architecture review and validation, comprehensive 16-section checklists, and templates for cloud-native platform implementation",
       "version": "1.0.0",
       "author": {
         "name": "Matthew Mellor"
       },
-      "skills": ["./bmad-agent-devops"]
+      "skills": ["./skills/bmad-agent-devops"]
     }
   ]
 }
