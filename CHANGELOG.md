@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.6.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.4...v0.6.0) (2026-07-15)
+
+
+### Features
+
+* Convert to BMad community module format ([32a002c](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/32a002c90e230b859f6353997c5438aa7cb617f0))
+
+
+### Bug Fixes
+
+* move marketplace.json to repo root so BMad installer can discover it ([45bd751](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/45bd7512769fd39ad4fd65cdf0b76d46f2efd644))
+
 ## [0.5.4](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.3...v0.5.4) (2026-06-29)
 
 
