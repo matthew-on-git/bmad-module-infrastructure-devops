@@ -84,7 +84,7 @@
     "prettier": "^3.7.4",
     "prettier-plugin-packagejson": "^2.5.19",
     "semver": "^7.6.3",
-    "sharp": "^0.33.5",
+    "sharp": "^0.35.3",
     "wrap-ansi": "^7.0.0",
     "xml2js": "^0.6.2",
     "yaml": "^2.7.0",
