@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.1...v0.6.2) (2026-07-27)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump js-yaml from 4.2.0 to 4.3.0 ([1fe46b5](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/1fe46b571dfe03b04fdcfde461e3cfd46804551f))
+* **deps-dev:** bump js-yaml from 4.2.0 to 4.3.0 ([c6997a4](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/c6997a47b1968b1e1c1bdd31b873a6f67e1adbae))
+* **deps:** bump postcss from 8.5.16 to 8.5.23 ([5b23486](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/5b234865585655f3ff723048f71436c0d824bed1))
+
 ## [0.6.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.0...v0.6.1) (2026-07-27)
 
 
