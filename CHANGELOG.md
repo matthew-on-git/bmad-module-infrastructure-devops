@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.6.1](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.0...v0.6.1) (2026-07-27)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump linkify-it from 5.0.1 to 5.0.2 ([c74eb70](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/c74eb704ba5875bcc5f1095a50d2eb84d3229bdd))
+* **deps-dev:** bump sharp and astro ([6c7be77](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/6c7be773ffc0455ec18098ad686e583cfacd7a91))
+* **deps-dev:** bump sharp and astro ([4a582a9](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/4a582a97a887ef2a619badc245da71913782010c))
+* **deps:** bump svgo from 4.0.1 to 4.0.2 ([3577d7e](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/3577d7e9310cf5564c4dffa743c4073d0c2f099a))
+
 ## [0.6.0](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.5.4...v0.6.0) (2026-07-15)
 
 
