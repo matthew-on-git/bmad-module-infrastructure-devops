@@ -108,12 +108,16 @@ Alex collaborates with other BMad agents:
 ## Module Structure
 
 ```text
+.claude-plugin/
+  marketplace.json                   # Community module distribution manifest
 skills/
+  module.yaml                        # Installer-discoverable module manifest
+  module-help.csv                    # Installer-discoverable help catalog
   bmad-agent-devops/
     SKILL.md                         # Alex agent skill definition
     assets/
-      module.yaml                    # Module manifest and config prompts
-      module-help.csv                # Help entries for the BMad help system
+      module.yaml                    # Self-registration module manifest (keep in sync)
+      module-help.csv                # Self-registration help catalog (keep in sync)
       module-setup.md                # Self-registration flow
     scripts/
       merge-config.py                # Config merge script
@@ -127,9 +131,9 @@ skills/
         platform-implementation-tmpl.md
       data/
         infrastructure-checklist.md
-  .claude-plugin/
-    marketplace.json                 # Community module distribution manifest
 ```
+
+> **Note:** `skills/module.yaml` and `skills/module-help.csv` are the files the BMAD installer locates for Quick Update and manifest generation. The copies under `skills/bmad-agent-devops/assets/` support standalone skill self-registration. Keep both pairs identical when changing module metadata or help entries.
 
 ## Development
 

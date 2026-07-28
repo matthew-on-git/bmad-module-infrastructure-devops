@@ -23,7 +23,7 @@ import sys
 from io import StringIO
 from pathlib import Path
 
-# CSV header for module-help.csv
+# CSV header for module-help.csv (canonical BMAD-METHOD schema)
 HEADER = [
     "module",
     "skill",
@@ -33,8 +33,8 @@ HEADER = [
     "action",
     "args",
     "phase",
-    "after",
-    "before",
+    "preceded-by",
+    "followed-by",
     "required",
     "output-location",
     "outputs",
