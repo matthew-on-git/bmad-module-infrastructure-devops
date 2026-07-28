@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.3](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.2...v0.6.3) (2026-07-28)
+
+
+### Bug Fixes
+
+* align module-help schema and installer discovery ([#53](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/issues/53)) ([3f30d71](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/3f30d71b74d5224d1b6cdfde97b52868effdda71))
+* align module-help schema and installer discovery for BMAD 6.10 ([25f0dc7](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/25f0dc7c622ac974ce634e68978548f0b1c8510f)), closes [#53](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/issues/53)
+
 ## [0.6.2](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.1...v0.6.2) (2026-07-27)
 
 
