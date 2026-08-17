@@ -21,8 +21,6 @@
   },
   "license": "MIT",
   "author": "Matthew Mellor",
-  "main": "",
-  "bin": {},
   "files": [
     "skills/"
   ],
