@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.5](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.4...v0.6.5) (2026-09-01)
+
+
+### Continuous Integration
+
+* harden npm publish workflow ([d78d57c](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/d78d57c4286a1a0aa2d803c7615843138ca67bca))
+* harden npm publish workflow ([db250b3](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/db250b375bff5544adc552692c94c2922aa1b44f))
+
 ## [0.6.4](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.3...v0.6.4) (2026-08-15)
 
 
