@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.6](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.5...v0.6.6) (2026-09-05)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump @humanfs/node from 0.16.7 to 0.16.8 ([a66d7c4](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/a66d7c4e07e8703c0bc49571716b400c04fe2539))
+* **deps:** bump brace-expansion ([e0ee504](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/e0ee5044099ae3cf10ec4ad2c9065ef4fbe754d6))
+
 ## [0.6.5](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.4...v0.6.5) (2026-09-01)
 
 
