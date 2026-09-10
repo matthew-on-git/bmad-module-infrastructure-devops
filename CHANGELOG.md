@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.8](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.7...v0.6.8) (2026-09-10)
+
+
+### Miscellaneous
+
+* **deps:** bump js-yaml and markdownlint-cli2 ([2a1cece](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/2a1ceceaf24a7cfdba150e99f3cc60df7f5310e0))
+* **deps:** bump smol-toml from 1.7.0 to 1.8.0 ([26cdf20](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/26cdf20ffdaae4fa4665a512dc2502f528cf0306))
+
 ## [0.6.7](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.6...v0.6.7) (2026-09-10)
 
 
