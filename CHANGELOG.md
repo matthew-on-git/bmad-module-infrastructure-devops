@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.6.7](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.6...v0.6.7) (2026-09-10)
+
+
+### Miscellaneous
+
+* **deps-dev:** bump astro from 7.1.3 to 7.3.2 ([32e31b9](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/32e31b9926abd4253973796dabf6ffe63bc669a9))
+* **deps-dev:** bump csv-parse from 6.1.0 to 7.0.2 ([aee5d0c](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/aee5d0cbbaa68c49dbb6beebd69261617ea82bc9))
+* **deps:** bump svgo from 4.0.2 to 4.1.0 ([31fa307](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/31fa307e5da0ecf06496dccec1b9c524fa20bbff))
+
 ## [0.6.6](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.5...v0.6.6) (2026-09-05)
 
 
