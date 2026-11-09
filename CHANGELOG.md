@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.6.9](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.8...v0.6.9) (2026-11-09)
+
+
+### Bug Fixes
+
+* **deps:** restore nested smol-toml lock entry ([6dabd5d](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/commit/6dabd5d228f8280c559587b5212f50b7f4f678c1))
+
 ## [0.6.8](https://github.com/matthew-on-git/bmad-module-infrastructure-devops/compare/v0.6.7...v0.6.8) (2026-09-10)
 
 
